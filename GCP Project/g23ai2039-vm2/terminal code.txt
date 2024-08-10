@@ -1,0 +1,7 @@
+sudo apt update
+sudo apt install sqlite3 -y
+sqlite3 database.db
+CREATE TABLE users1 (id INTEGER PRIMARY KEY, name TEXT);
+INSERT INTO users1 (name) VALUES ('John Doe');
+INSERT INTO users1 (name) VALUES ('Jane Smith');
+.exit
